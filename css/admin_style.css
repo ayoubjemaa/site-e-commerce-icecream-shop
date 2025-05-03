@@ -1,0 +1,763 @@
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none; 
+    border: none; 
+    text-decoration: none; 
+    list-style: none; 
+} 
+/*-----variables-----------*/ 
+:root{ 
+    --space: 2rem; 
+    --main-color: #da6285; 
+    --pink-color: #ff8e9d; 
+    --pink-opacity: #ffe6e9; 
+    --white-alpha-40: rgba(255, 255, 255, 0.40); 
+    --white-alpha-25: rgba(255, 255, 255, 0.25); 
+    --backdrop-filter: blur(5px); 
+    --box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.40); 
+}
+/*-------global styling-------------------*/  
+body {
+    background-image: url("../image/bg1.webp");
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html{ 
+    scroll-behavior: smooth; 
+} 
+.btn{
+    background-color: var(--white-alpha-25); 
+    border: 2px solid var(--white-alpha-40); 
+    backdrop-filter: var(--backdrop-filter); 
+    box-shadow: var(--box-shadow); 
+    text-transform: capitalize; 
+    color: var(--main-color); 
+    padding: .8rem 2rem; 
+    border-radius: 1.5rem; 
+    font-size: 20px; 
+    cursor: pointer; 
+    position: relative;
+    text-align: center;
+}
+.btn::before
+{
+    position: absolute;
+    content: '';
+    top: 0;
+    left:0;
+    height:100%;
+    width:0;
+    border-radius: 30px;
+    background-color: var(--main-color);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+.btn:hover::before{
+    width: 100%;
+}
+.btn:hover
+{
+    color:#fff;
+}
+.empty
+{
+    background-color: var(--white-alpha-25); 
+    border: 2px solid var(--white-alpha-40); 
+    backdrop-filter: var(--backdrop-filter); 
+    box-shadow: var(--box-shadow); 
+    text-transform: capitalize; 
+    color: var(--main-color); 
+    padding: 1.5rem;
+    text-align: center;
+    margin: 2rem auto;
+    width: 50vw;
+    border-radius: .5rem;
+    line-height: 2;
+}
+.empty p{
+    font-size: 20px;
+}
+input[type='submit']{
+    cursor: pointer;
+}
+input[type='submit']:hover{
+    color:var(--main-color)
+}  
+
+.box-container{ 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
+    align-items: center;
+} 
+.box-container .box{ 
+    background-color: var(--white-alpha-25); 
+    border: 2px solid var(--white-alpha-40); 
+    backdrop-filter: var(--backdrop-filter); 
+    box-shadow: var(--box-shadow); 
+    margin: 1rem;
+    border-radius: .5rem;
+}
+.heading{ 
+    text-align: center; 
+    Line-height: 1.5;
+} 
+.heading h1 {
+    font-size: 2rem; 
+    text-transform: capitalize;
+} 
+.heading span{ 
+    color: var(--main-color); 
+    text-transform: capitalize; 
+    font-size: 16px;
+}
+.heading img{
+    margin-top: .5rem;
+    width: 150px!important;
+}
+section,
+.post-editor{
+    width:75vw;
+    min-width: 100vh;
+    padding: 4%;
+    margin:8% 5%;
+    margin-bottom: 2%;
+}
+.flex-btn{
+    display: flex;
+    justify-content: space-between;
+}
+.flex-btn .btn
+{
+    margin: .5rem;
+}
+/*--------------custom scroll bar------------------*/
+::-webkit-scrollbar{ 
+    width: 5px; 
+} 
+::-webkit-scrollbar-thumb { 
+    --webkit-border-radius: 20px; 
+    border-radius: 20px; 
+    height: 40px; 
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    background-color: var(--pink-color); 
+    position: relative; 
+} 
+::-webkit-scrollbar-track{ 
+    background-color: transparent; 
+    --webkit-border-radius: 20px; 
+    border-radius: 20px; 
+    height: 40px; 
+    margin-top: 30px; 
+    margin-bottom: 30px; 
+    margin-right: 10px; 
+    margin-left: 10px;
+}
+/*----------form container ------------------------*/
+.form-container{ 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    flex-direction: column;
+    min-height: 100vh; 
+    padding: 4% 0; 
+    position: relative; 
+} 
+.form-container form{ 
+    background-color: var(--white-alpha-25); 
+    border: 2px solid var(--white-alpha-40); 
+    backdrop-filter: var(--backdrop-filter); 
+    box-shadow: var(--box-shadow); 
+    border-radius: .5rem; 
+    padding: 2rem; 
+}
+.form-container form .flex{
+    display: flex;
+    gap:2rem;
+} 
+.form-container form .flex .col
+{
+    flex: 1 1 25rem;
+}
+.form-container .login{ 
+    width: 50rem; 
+} 
+.form-container .register{ 
+    width: 60rem; 
+    } 
+.form-container .register .img-box{ 
+    text-align: center; 
+    margin-bottom: 1rem; 
+} 
+.form-container .register .img-box img{ 
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px;
+    background-color: var(--main-color);
+}
+.form-container form h3{ 
+    text-align: center; 
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: var(--main-color); 
+    text-transform: capitalize; 
+    font-weight: bolder; 
+} 
+.form-container form p{ 
+    padding-top: 1rem; 
+    font-size: 1.2rem; 
+    text-transform: capitalize; 
+} 
+.form-container form p span{ 
+    color: red; 
+}
+.form-container form .link{
+    padding-bottom: 1rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+.form-container form .link a{
+    color: var(--main-color);
+}
+.form-container form .link a:hover{
+    color:var(--pink-color);
+    text-decoration: underline;
+}
+.form-container form .box{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    border-radius: .5rem;
+    margin: .5em 0;
+    font-size: 1.3rem;
+    padding: 1rem
+    ;
+}
+.form-container form textarea
+{
+    height: 20rem;
+    resize: none;
+}
+.form-container form .btn{
+    width: 100%;
+    font-size: 1.3rem;
+}
+.form-container .image {
+    width: 100%;
+    height: 30rem;
+}
+.post-editor input[type="submit"]{
+    width: 49%;
+}
+/*---------------header section -----------------------*/
+header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    height: 80px;
+    z-index: 151;
+    box-shadow: 0px 5px 10px 0px #aaa;
+    padding: 0 50px;
+    background-color: #f4f8ee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .right{
+    display: flex;
+}
+#user-btn,
+.toggle-btn{
+    font-size: 2rem;
+    padding: .5rem;
+    color:var(--pink-color);
+    cursor: pointer;
+    transition: .6s;
+
+}
+.toggle-btn{
+    margin-left: .5rem;
+    display: none;
+}
+.profile-detail{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    position: absolute;
+    top: 125%;
+    right: 2rem;
+    border-radius: .5rem;
+    width: 22rem;
+    padding: 1.5rem .5rem;
+    animation: .2s linear fadeIn;
+    text-align: center;
+    overflow: hidden;
+    display: none;
+}
+@keyframes fadeIn{
+    0%{
+        transform: translateY(1rem);
+    }
+}
+.profile-detail.active{
+    display: inline-block;
+}
+.profile-detail p{
+    margin-bottom: .7rem;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    color: lightgray;
+}
+.profile-detail .flex-btn{
+    display: flex;
+    justify-content: space-evenly;
+}
+.profile-detail .flex-btn .btn{
+    margin: 0 .5rem;
+}
+.main-container{
+    display: flex;
+}
+.sidebar{
+    background-color: var(--white-alpha-25);
+    backdrop-filter: var(--backdrop-filter);
+    padding-top: 3rem;
+    width: 18vw;
+    height: 100vh;
+    position: sticky;
+    --offset:var(--space);
+    top: var(--offset);
+    box-shadow: 0px 5px 10px 0px #aaa;
+    overflow: auto;
+    z-index: 1;
+}
+.sidebar h5{
+    text-transform: uppercase;
+    color: var(--main-color);
+    padding: .5rem 1rem;
+    margin: .5rem 0;
+}
+.profile{
+    margin: .5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+.sidebar .profile{
+    margin-top: 2.5rem;
+}
+.profile .logo-img{
+    border-radius: 50%;
+    padding: .2rem;
+    border:2px solid var(--main-color)
+}
+.sidebar .profile p{
+    margin-top: .5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #000;
+    font-size: 1.3rem;
+}
+.sidebar ul li{
+    padding: 1rem;
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    transition: .5s;
+    margin: .5rem 0;
+}
+.sidebar ul li::before{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 0%;
+    width: 5px;
+    background-color: var(--main-color);
+    z-index: 2;
+    transition: all 200ms linear;
+} 
+.sidebar ul li:hover::before{
+    height: 100%;
+}
+.sidebar ul li i{
+    color: var(--main-color);
+    font-size: 20px;
+    margin-right: 2rem;
+}
+.sidebar ul li a{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 12px;
+    font-weight: bold;
+}
+.social-links{
+    margin-bottom: 2rem;
+}
+.social-links i{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    margin: .3rem;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    transition: .5s;
+    border-radius: 50%;
+    color: var(--main-color);
+}
+.social-links i:hover{
+    background-color: var(--pink-opacity);
+    border: 2px solid var(--main-color);
+}
+/*--------------dashboard-------------------*/
+.dashboard .box-container .box{
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1.5rem;
+    padding-bottom: 3rem;
+}
+.dashboard .box-container .bx h3{
+    font-size: 2.7rem;
+    margin-bottom: -1rem;
+}
+.dashboard .box-container .box p{
+    padding: 1rem;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+/*----------view product design--------------*/
+
+.show-post .box-container .box{
+    position: relative;
+    overflow: hidden;
+}
+.show-post .box-container .box:hover .image{
+    transform: scale(1.1);
+}
+.show-post .box-container .box .image{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    transition: .5s;
+    background-color: palegreen;
+}
+.show-post .box-container .box .content{
+    position: relative;
+    display: block;
+    background-color: #fff;
+    padding: 40px 10px;
+    margin-top: -80px;
+    border-top-right-radius: 80px;
+    text-align:center;
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+.show-post .box-container .box .content .shap{
+    position: absolute;
+    left: 0;
+    top: -80px;
+    width: 80px;
+    height: 80px;
+    background-repeat: no-repeat;
+}
+.show-post .box-container .box .status{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem 1rem ;
+    border-radius: .5rem;
+    display: inline-block;
+    background-color: var(--white-alpha-40);
+}
+.show-post .box-container .box .price{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align:center;
+    border-radius: 50%;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-weight: bolder;
+    background-color: var(--pink-color);
+    font-size: 1.5rem;
+}
+.show-post .box-container .box .content .title{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.show-post .box-container .box .post-content{
+    font-size: 1.3rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+.show-post .box-container .box .btn{
+    margin: .2rem;
+    padding: .2rem 1.5rem;
+    width: 30%;
+    text-align: center;
+}
+.show-post .box-container .box button{
+    width: 30%;
+}
+.post-editor img {
+    width: 100%;
+}
+.read-post{
+    display: flex;
+    flex-direction: column;
+}
+.read-post form{
+    width: 100%;
+    padding: 2rem;
+    position: relative;
+}
+.read-post form .status{
+    border-radius: .5rem;
+    padding: .5rem 2rem;
+    font-size: 1.1rem;
+    display: inline-block;
+    text-transform: uppercase;
+}
+.read-post form .price{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.read-post form .image{
+    width: 100%;
+    border-radius: .5rem;
+    margin-top: 1.5em;
+}
+.read-post form .title{
+    font-size: 2.5rem;
+    color: var(--main-color);
+    margin-top: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.read-post form .content{
+    line-height: 2;
+    font-style: 1.2rem;
+    color: gray;
+    padding: 1rem 0;
+}
+.read-post form .flex-btn{
+    justify-content: space-between;
+}
+.read-post form .flex-btn .btn{
+    width: 33%;
+    text-align: center;
+}
+.read-post form .flex-btn a{
+    height: 50px;
+    margin-top: .8rem;
+}
+/*--------profile section ---------------*/
+.seller-profile .details{
+    background-color: var(--white-alpha-25);
+    border: 2px solid var(--white-alpha-40);
+    backdrop-filter: var(--backdrop-filter);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+.seller-profile .details .seller{
+    margin-bottom: 2rem;
+}
+.seller-profile .details .seller img{
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+    padding: .5rem;
+    background-color: var(--main-color);
+}
+.seller-profile .details .seller h3{
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    text-transform: capitalize;
+}
+.seller-profile .details .seller span{
+    font-size: 1.2rem;
+    color: gray;
+    display: block;
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+}
+.seller-profile .details .flex{
+    display: flex;
+    gap: 1.3rem;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 4rem 0;
+
+}
+.seller-profile .details .flex .box{
+    flex: 1 1 23.5rem;
+    border-radius: .5rem;
+    background-color: #cccccc33;
+    padding: 2rem;
+}
+.seller-profile .details .flex .box span{
+    color: var(--main-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    text-transform: capitalize;
+    font-size: 2.5rem;
+}
+.seller-profile .details .flex .box p{
+    font-size: 2rem;
+    color: #000;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+}
+.message-container .box-container .box{
+    line-height: 2;
+    padding: 2rem;
+}
+.message-container .box-container .box .name{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.message-container .box-container .box h4{
+    text-transform: capitalize;
+    color: var(--main-color);
+}
+.message-container .box-container .box p{
+    margin-bottom: 1rem;
+}
+.order-container .box-container .box{
+    padding: 1rem;
+    position: relative;
+}
+.order-container .box-container .box .status{
+    position: absolute;
+    left: -4%;
+    top: 1%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    background-color: var(--white-alpha-40);
+    display: inline-block;
+    padding: .5rem;
+}
+.order-container .box-container .box .details{
+    margin-top: 3rem;
+    line-height: 2;
+    color: gray;
+    text-transform: capitalize;
+}
+.order-container .box-container .box span{
+    text-transform: none;
+}
+.user-container .box-container{
+    margin-top: 3rem;
+}
+.user-container .box-container .box{
+    text-align: center;
+    padding: 2rem;
+    text-transform: capitalize;
+    line-height: 2;
+    color: gray;
+    margin-bottom: 4rem;
+}
+.user-container .box-container .box span{
+    text-transform: none;
+}
+.user-container .box-container .box img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    box-shadow: var(--box-shadow);
+    padding: 0.5rem;
+    background-color: var(--white-alpha-40);
+    margin-top: -5rem;
+    margin-bottom: 1rem;
+}
+
+
+
+/*--------container----------*/
+.container{
+    padding: 4%;
+    padding-bottom: 0;
+}
+.container .box-container .img-box{
+    margin: 1rem;
+}
+.container .box-container .img-box img{
+    background-image: url('../image/shap.png');
+    background-size: contain;
+    width: 80%;
+    margin-bottom: -1.1rem;
+}
+.container .box-container .box{
+    text-align: center;
+    line-height: 2;
+    box-shadow: none;
+}
+.container .box-container p{
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 2rem;
+}
+
+
+/*------------------media screen---------------------------*/
+@media screen and (max-width:991px) {
+    .toggle-btn{
+        display: block;
+    }
+    .sidebar{
+        padding-top: 4rem;
+        position: fixed;
+        width: 0;
+        transition: .5s;
+        z-index: 101;
+        top: 7%;
+    }
+    .sidebar.active{
+        width: 300px;
+    }
+    .sidebar .profile{
+        margin-top: .5rem;
+    }
+    section{
+        width: 100%;
+    }
+    
+
+}
