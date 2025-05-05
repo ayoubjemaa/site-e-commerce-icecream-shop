@@ -43,6 +43,7 @@ Permet à l’utilisateur de découvrir des informations détaillées sur :
 • Nos boules de glace
 
 ![image](https://github.com/user-attachments/assets/b1fe6425-b788-4070-baf9-2f5b5269dfd6)
+![image](https://github.com/user-attachments/assets/63d41452-ac38-4b61-96af-bf1043a1db8c)
 ![image](https://github.com/user-attachments/assets/13a08039-07c0-4271-b0e6-36b749b0f70e)
 ![image](https://github.com/user-attachments/assets/1ef99091-a63d-477c-b130-3d83ef5c5674)
 ![image](https://github.com/user-attachments/assets/67debf65-bfb3-4bb0-9eb2-e394e868cdea)
