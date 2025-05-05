@@ -23,6 +23,7 @@ Permet à l’utilisateur de visualiser des informations clés sur :
 • Nos services
 • Nos parfums
 • Nos boules de glace
+
 ![image](https://github.com/user-attachments/assets/f8c69abe-1832-4266-8c6b-a92c301595e3)
 ![image](https://github.com/user-attachments/assets/f345db71-7d21-4080-b07b-6f3653d6d74c)
 ![image](https://github.com/user-attachments/assets/9d278825-907a-49d0-b38f-c0fbed7111d7)
@@ -40,10 +41,9 @@ Permet à l’utilisateur de découvrir des informations détaillées sur :
 • Notre histoire – Taking Ice Cream To New Heights
 • Les propriétaires du projet et le rôle de chacun
 • Nos boules de glace
-![image](https://github.com/user-attachments/assets/40c86092-c351-41f2-bfe4-27dae598bec8)
+
 ![image](https://github.com/user-attachments/assets/b1fe6425-b788-4070-baf9-2f5b5269dfd6)
 ![image](https://github.com/user-attachments/assets/13a08039-07c0-4271-b0e6-36b749b0f70e)
-![image](https://github.com/user-attachments/assets/126a6790-ad28-4455-9dfc-4cb7ed6ca8f7)
 ![image](https://github.com/user-attachments/assets/1ef99091-a63d-477c-b130-3d83ef5c5674)
 ![image](https://github.com/user-attachments/assets/67debf65-bfb3-4bb0-9eb2-e394e868cdea)
 
