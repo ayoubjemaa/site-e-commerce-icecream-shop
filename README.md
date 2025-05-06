@@ -61,6 +61,7 @@ Permet à l’utilisateur d’ajouter des produits au panier ou à la liste de s
 5/
 
 👤 Espace utilisateur connecté :
+
 Une fois inscrit, l’utilisateur peut se connecter pour :
 • Visualiser et modifier son profil
 • Mettre à jour ses coordonnées (stockées dans la table user de la base de données)
@@ -72,6 +73,14 @@ Une fois inscrit, l’utilisateur peut se connecter pour :
 ![image](https://github.com/user-attachments/assets/2a524842-8878-4aba-b8f6-7a7256b07dd9)
 ![image](https://github.com/user-attachments/assets/04587243-9d3f-467d-893d-202f2d76d1bd)
 ![image](https://github.com/user-attachments/assets/8af4fc81-0804-45ce-b783-96de52b60fc4)
+
+👁️ Vue détaillée d’un produit :
+
+Permet à l’utilisateur de consulter les détails d’un produit en cliquant sur l’icône en forme d’œil présente sur la carte du produit.
+Il peut ensuite l’ajouter à sa liste de souhaits ❤️ ou à son panier 🛒.
+
+![image](https://github.com/user-attachments/assets/464c33ef-b39d-4620-b89a-df7566395665)
+
 
 ❤️ Liste de souhaits :
 
@@ -90,7 +99,20 @@ Permet à l’utilisateur de sauvegarder ses parfums de glace préférés pour l
 ![image](https://github.com/user-attachments/assets/d93cdc5b-3e7a-4a28-823c-3a2aaf9d6357)
 ![image](https://github.com/user-attachments/assets/adf985a9-a22b-4760-884c-c4825f748116)
 ![image](https://github.com/user-attachments/assets/a89a6aeb-1ea0-4026-a063-5552d763fa80)
-![image](https://github.com/user-attachments/assets/ec485b7e-22ae-4e12-9272-688d76581651)
+
+💳 Interface de checkout :
+Permet à l’utilisateur d’acheter les produits présents dans son panier en saisissant ses coordonnées pour passer une commande.
+![image](https://github.com/user-attachments/assets/4a5f7407-b60f-461e-a063-e1cb5bcccae6)
+![image](https://github.com/user-attachments/assets/fc43b913-8675-4c2e-b15d-02ae66081365)
+![image](https://github.com/user-attachments/assets/32538e09-1139-4fdd-8624-cf3974d721dc)
+
+📦 Suivi des commandes :
+
+Permet à l’utilisateur de consulter les détails de ses commandes passées, en cours ou annulées (canceled), avec le statut affiché clairement pour chaque commande.
+![image](https://github.com/user-attachments/assets/317360db-ea4d-4bf0-8176-5d68a4467c00)
+![image](https://github.com/user-attachments/assets/8d0e8377-0717-4469-9992-86b0130b3bc0)
+
+
 
 
 
