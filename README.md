@@ -49,6 +49,61 @@ Permet à l’utilisateur de découvrir des informations détaillées sur :
 ![image](https://github.com/user-attachments/assets/67debf65-bfb3-4bb0-9eb2-e394e868cdea)
 
 
+4/ 🛒 Page Boutique (Shop) :
+
+Permet à l’utilisateur d’ajouter des produits au panier ou à la liste de souhaits selon la quantité choisie, ou de recommander directement un parfum de glace.
+
+![image](https://github.com/user-attachments/assets/78182307-13d1-4298-92da-2a406bd87aac)
+![image](https://github.com/user-attachments/assets/e2cabefa-14d5-4877-804d-47a8dff0283e)
+![image](https://github.com/user-attachments/assets/1776d7fa-4fc9-4dcb-b112-6551f6568e66)
+![image](https://github.com/user-attachments/assets/dfed85cd-cbca-42cd-874b-c8e25b316cd8)
+
+5/
+
+👤 Espace utilisateur connecté :
+Une fois inscrit, l’utilisateur peut se connecter pour :
+• Visualiser et modifier son profil
+• Mettre à jour ses coordonnées (stockées dans la table user de la base de données)
+• Consulter sa liste de souhaits (wislist)
+• Accéder à son panier et recommander des glaces
+
+![image](https://github.com/user-attachments/assets/3ee02292-4797-4f9d-a072-bfe47e94a6e9)
+![image](https://github.com/user-attachments/assets/1248ad1d-00c2-4da7-8369-5fbd7e29f304)
+![image](https://github.com/user-attachments/assets/2a524842-8878-4aba-b8f6-7a7256b07dd9)
+![image](https://github.com/user-attachments/assets/04587243-9d3f-467d-893d-202f2d76d1bd)
+![image](https://github.com/user-attachments/assets/8af4fc81-0804-45ce-b783-96de52b60fc4)
+
+❤️ Liste de souhaits :
+
+Permet à l’utilisateur de sauvegarder ses parfums de glace préférés pour les retrouver facilement plus tard.(ex: 3 présent dans la capture) 
+![image](https://github.com/user-attachments/assets/3c13899d-af7b-48c7-b361-8ed09e2b1cc6)
+![image](https://github.com/user-attachments/assets/78858546-533e-4f76-927c-ff19532f9c08)
+
+🧺 Gestion du panier :
+
+• Affichage des produits ajoutés au panier (ex. : 4 produits)
+• Possibilité de modifier la quantité de chaque produit
+• Visualisation du montant total du panier
+• Option pour vider entièrement le panier ou supprimer les produits un par un
+• Possibilité de procéder au checkout pour finaliser la commande
+
+![image](https://github.com/user-attachments/assets/d93cdc5b-3e7a-4a28-823c-3a2aaf9d6357)
+![image](https://github.com/user-attachments/assets/adf985a9-a22b-4760-884c-c4825f748116)
+![image](https://github.com/user-attachments/assets/a89a6aeb-1ea0-4026-a063-5552d763fa80)
+![image](https://github.com/user-attachments/assets/ec485b7e-22ae-4e12-9272-688d76581651)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
